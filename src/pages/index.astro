@@ -1,11 +1,90 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { Image } from "astro:assets";
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import homeLoan from '../assets/home-loan.webp';
+import goldLoan from '../assets/gold-loan.webp';
+import governmentSalary from '../assets/government_salary.webp';
+import starAssetBackedLoan from '../assets/star-asset-backed-loan.webp';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<Header />
+	<section class=" h-screen flex items-center justify-center">
+		<div class="bg-red-800 w-[80vw] h-[60vh] p-20 px-40 rounded-[0_0_200px_0] flex flex-col items-center justify-center text-white text-center hover:scale-105 transition-all duration-300">
+			<h1 class="font-bold text-4xl pb-20">Welcome to the Sevalia Urban Cooperative Bank!</h1>
+			<p class="pb-10 text-2xl">
+				We are a cooperative bank dedicated to serving the financial needs of our community. Our mission is to provide accessible and affordable banking services while promoting economic growth and social responsibility.
+			</p>
+			<p class="pb-10 text-2xl">
+				Explore our services, learn about our community initiatives, and discover how we can help you achieve your financial goals. Whether you're looking for personal banking solutions, business loans, or investment opportunities, we are here to support you every step of the way.
+			</p>
+		</div>
+	</section>
+	<section class="bg-gray-100 py-20">
+		<h1 class="text-6xl font-bold pl-25 pb-10">
+			Our<br />Services
+		</h1>
+		<div class="grid grid-cols-4 grid-rows-4 gap-4">
+			<div class="col-span-2 row-span-2">
+				<div class="flex items-center justify-center gap-10 ">
+					<div>
+						<Image src={homeLoan} alt="Home Loan" class="w-90 h-60 object-cover rounded-[0_0_80px_0]" />
+					</div>
+					<div class="max-w-80">
+						<h1 class="text-4xl text-red-600 uppercase">home loan</h1>
+						<h2 class="text-md font-bold text-black uppercase pb-8">ROI 7.85% p.a. onwards</h2>
+						<p>
+							Provides loans to purchase a Plot for construction of a House, to purchase/construct house/flat, as well as for renovation/ repair/alteration/addition to house/flat
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-2 row-span-2 col-start-3">
+				<div class="flex items-center justify-center gap-10 ">
+					<div>
+						<Image src={starAssetBackedLoan} alt="Home Loan" class="w-90 h-60 object-cover rounded-[0_0_80px_0]" />
+					</div>
+					<div class="max-w-80">
+						<h1 class="text-4xl text-red-600 uppercase">asset backed loan</h1>
+						<h2 class="text-md font-bold text-black uppercase pb-8">25% in NFB Commissions</h2>
+						<p>
+							To provide loans against the security of Gold, Fixed Deposits, LIC Policies, NSC, KVP, and other approved securities.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-2 row-span-2 row-start-3">
+				<div class="flex items-center justify-center gap-10 ">
+					<div>
+						<Image src={goldLoan} alt="Home Loan" class="w-90 h-60 object-cover rounded-[0_0_80px_0]" />
+					</div>
+					<div class="max-w-80">
+						<h1 class="text-4xl text-red-600 uppercase">gold loan</h1>
+						<h2 class="text-md font-bold text-black uppercase pb-8">at attractive rates of interest</h2>
+						<p>
+							Provides loans against the security of Gold ornaments and Gold coins to meet the personal needs of the borrowers.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-span-2 row-span-2 col-start-3 row-start-3">
+				<div class="flex items-center justify-center gap-10 ">
+					<div>
+						<Image src={governmentSalary} alt="Home Loan" class="w-90 h-60 object-cover rounded-[0_0_80px_0]" />
+					</div>
+					<div class="max-w-80">
+						<h1 class="text-4xl text-red-600 uppercase">government salary</h1>
+						<h2 class="text-md font-bold text-black uppercase pb-8">for all government sector employees</h2>
+						<p>
+							Provides loans to Government employees, Semi-Government employees, and employees of Public Sector Undertakings (PSUs) for personal needs.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 </Layout>
