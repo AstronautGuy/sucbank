@@ -1,4 +1,7 @@
 @import "tailwindcss";
+body {
+    overflow-x: hidden;
+}
 
 .scroll-container {
     width: 100%;
