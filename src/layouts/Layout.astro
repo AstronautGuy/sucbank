@@ -1,3 +1,10 @@
+---
+import Header from "../components/Header.astro"
+import Logo from "../assets/logo.jpg";
+import mappin from "../assets/mappin.svg";
+import {Image} from "astro:assets";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -8,7 +15,67 @@
 		<title>Sevalia Bank</title>
 	</head>
 	<body>
+	<header class="absolute top-0 left-0 w-screen z-10 bg-[#eaddca]">
+		<!-- Navbar -->
+		<div class="h-20 px-6 w-full max-w-7xl mx-auto flex items-center justify-between">
+			<a href="/">
+				<Image src={Logo} alt="Sevalia Bank Logo" width={80} height={80} class="rounded-full" loading="eager" />
+			</a>
+			<nav class="flex gap-6 items-center">
+				<a href="/" class="text-gray-800 hover:text-red-600 hover:scale-110 transition-all duration-300">Home</a>
+				<a href="/about" class="text-gray-800 hover:text-red-600 hover:scale-110 transition-all duration-300">About</a>
+				<a href="/contact" class="text-gray-800 hover:text-red-600 hover:scale-110 transition-all duration-300">Contact</a>
+				<a href="/contact" class="text-gray-800 hover:scale-110 transition-transform">
+					<Image src={mappin} alt="Map Pin" width={24} height={24} loading="eager" />
+				</a>
+			</nav>
+		</div>
+
+		<!-- Scrolling Text -->
+		<div class="scroll-container w-full bg-[#d6c1aa] py-2 overflow-hidden whitespace-nowrap text-center">
+    <span class="scrolling-text animate-marquee text-[15px] font-medium text-gray-700">
+      Welcome to the Sevalia Urban Cooperative Bank. We hope you have a great experience with us. 🙏
+    </span>
+		</div>
+	</header>
 		<slot />
+	<footer class="bg-rose-700 text-white py-24 px-6">
+		<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
+
+			<!-- Regulatory Block -->
+			<div>
+				<h3 class="text-2xl font-semibold mb-6">Regulatory Information</h3>
+				<p class="text-sm font-medium mb-3">
+					Sevalia Urban Cooperative Bank is registered with the Reserve Bank of India and operates under the Banking Regulation Act, 1949 (As Applicable to Cooperative Societies).
+				</p>
+				<p class="text-sm font-medium">
+					Member of Gujarat State Cooperative Bank and insured under DICGC up to ₹5,00,000 per depositor.
+				</p>
+			</div>
+
+			<!-- Contact Block -->
+			<div>
+				<h3 class="text-2xl font-semibold mb-6">Contact Us</h3>
+				<p class="text-sm font-medium">📍 Sevalia, Gujarat – 388245</p>
+				<p class="text-sm font-medium">📞 +91 98765 43210</p>
+				<p class="text-sm font-medium">✉️ contact@sevaliabank.in</p>
+				<p class="text-sm font-medium mt-4">⏰ Mon – Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
+			</div>
+
+			<!-- Quick Info Block -->
+			<div>
+				<h3 class="text-2xl font-semibold mb-6">Customer Support</h3>
+				<p class="text-sm font-medium">For queries, complaints, or assistance, visit your nearest branch or call our helpline.</p>
+				<p class="text-sm font-medium mt-3">🛡️ We are committed to ethical, transparent, and inclusive banking.</p>
+				<p class="text-sm font-medium mt-3">👥 Follow us on WhatsApp for daily updates on rates and schemes (coming soon).</p>
+			</div>
+
+		</div>
+
+		<p class="text-center mt-16 text-xs text-white/70">
+			© 2025 Sevalia Urban Cooperative Bank. All rights reserved. | Designed with 🤍 in Gujarat.
+		</p>
+	</footer>
 	</body>
 </html>
 

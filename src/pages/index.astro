@@ -1,16 +1,10 @@
 ---
-import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
-import Logo from "../assets/logo.jpg";
-import mappin from "../assets/mappin.svg";
-import {Image} from "astro:assets";
+import { Image } from 'astro:assets';
 import "../styles/global.css";
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Header />
 	<section class="bg-[#fef9f6] text-gray-800 font-sans tracking-tight">
 
 		<!-- Hero Section -->
@@ -68,7 +62,7 @@ import "../styles/global.css";
 
 				<!-- Image -->
 				<div class="md:w-1/2">
-					<img src="/about-placeholder.jpg" alt="Bank staff interacting" class="rounded-xl shadow-lg w-full h-[500px] object-cover object-center" />
+					<img src="/about.jpg" alt="Bank staff interacting" class="rounded-xl shadow-lg w-full h-[500px] object-cover object-center" />
 				</div>
 			</div>
 		</section>
@@ -80,7 +74,7 @@ import "../styles/global.css";
 
 				<!-- Image -->
 				<div class="md:w-1/2">
-					<img src="/services-placeholder.jpg" alt="Bank services" class="rounded-xl shadow-lg w-full h-[500px] object-cover object-center" />
+					<img src="/services.png" alt="Bank services" class="rounded-xl shadow-lg w-full h-[500px] object-fit object-center" />
 				</div>
 
 				<!-- Text + Cards -->
@@ -187,45 +181,5 @@ import "../styles/global.css";
 				</div>
 			</div>
 		</section>
-
-
-		<!-- Footer -->
-		<footer class="bg-rose-700 text-white py-24 px-6">
-			<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
-
-				<!-- Regulatory Block -->
-				<div>
-					<h3 class="text-2xl font-semibold mb-6">Regulatory Information</h3>
-					<p class="text-sm font-medium mb-3">
-						Sevalia Urban Cooperative Bank is registered with the Reserve Bank of India and operates under the Banking Regulation Act, 1949 (As Applicable to Cooperative Societies).
-					</p>
-					<p class="text-sm font-medium">
-						Member of Gujarat State Cooperative Bank and insured under DICGC up to ₹5,00,000 per depositor.
-					</p>
-				</div>
-
-				<!-- Contact Block -->
-				<div>
-					<h3 class="text-2xl font-semibold mb-6">Contact Us</h3>
-					<p class="text-sm font-medium">📍 Sevalia, Gujarat – 388245</p>
-					<p class="text-sm font-medium">📞 +91 98765 43210</p>
-					<p class="text-sm font-medium">✉️ contact@sevaliabank.in</p>
-					<p class="text-sm font-medium mt-4">⏰ Mon – Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
-				</div>
-
-				<!-- Quick Info Block -->
-				<div>
-					<h3 class="text-2xl font-semibold mb-6">Customer Support</h3>
-					<p class="text-sm font-medium">For queries, complaints, or assistance, visit your nearest branch or call our helpline.</p>
-					<p class="text-sm font-medium mt-3">🛡️ We are committed to ethical, transparent, and inclusive banking.</p>
-					<p class="text-sm font-medium mt-3">👥 Follow us on WhatsApp for daily updates on rates and schemes (coming soon).</p>
-				</div>
-
-			</div>
-
-			<p class="text-center mt-16 text-xs text-white/70">
-				© 2025 Sevalia Urban Cooperative Bank. All rights reserved. | Designed with 🤍 in Gujarat.
-			</p>
-		</footer>
 	</section>
 </Layout>

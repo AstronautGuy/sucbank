@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-rose-100 via-amber-100 to-rose-50 px-6 text-center">
+        <div class="max-w-4xl space-y-8">
+            <h1 class="text-5xl font-bold text-rose-700">About Sevalia Urban Cooperative Bank</h1>
+            <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                Since 2013, we've been more than just a bank — we're a cooperative family rooted in trust, tradition, and community care. With every account we open and every loan we grant, we empower the people of Gujarat.
+            </p>
+            <p class="text-md text-gray-600">Registered under RBI • Member of Gujarat State Cooperative Bank • DICGC Insured</p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="min-h-screen flex items-center justify-center bg-white px-6 py-28">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16 text-center md:text-left">
+            <!-- Text -->
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-4xl font-bold text-rose-700">Our Mission & Vision</h2>
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    Our mission is to deliver accessible, transparent, and people-centric banking solutions across rural and semi-urban regions of Gujarat.
+                </p>
+                <p class="text-lg text-gray-700 font-medium leading-relaxed">
+                    We envision a financially empowered community where every citizen — from farmers to homemakers — can grow with dignity, support, and financial security.
+                </p>
+            </div>
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="/mission.jpg" alt="Mission vision image" class="rounded-xl shadow-lg w-full h-[450px] object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Journey -->
+    <section class="min-h-screen flex items-center justify-center bg-[#fef9f6] px-6 py-28">
+        <div class="max-w-6xl mx-auto text-center space-y-12">
+            <h2 class="text-4xl font-bold text-rose-700">Our Journey</h2>
+            <div class="grid md:grid-cols-3 gap-10 text-left">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-rose-600">2013</h3>
+                    <p class="text-gray-600">Founded in Sevalia with 3 employees and a vision to uplift the rural community through financial access.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-rose-600">2017</h3>
+                    <p class="text-gray-600">Opened 5 new branches, introduced agricultural and housing loans for small towns and villages.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-rose-600">2023+</h3>
+                    <p class="text-gray-600">Launched mobile banking, UPI services, and digital passbooks — bringing modern banking to rural pockets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="min-h-screen flex items-center justify-center bg-rose-50 px-6 py-28">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-rose-700 mb-12">What We Stand For</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">🤝 Trust</h3>
+                    <p class="text-gray-600 font-medium">Built with honesty, nurtured with transparency, and honored through years of loyal service.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">🌾 Community</h3>
+                    <p class="text-gray-600 font-medium">Every account holder is a part-owner. We grow as a collective, not as customers and clients.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">📚 Education</h3>
+                    <p class="text-gray-600 font-medium">We promote financial literacy, guiding every villager on savings, credit, and growth.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">🔒 Security</h3>
+                    <p class="text-gray-600 font-medium">We are RBI-regulated, insured, and committed to your privacy and protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
