@@ -1,5 +1,4 @@
 ---
-import Header from "../components/Header.astro"
 import Logo from "../assets/logo.jpg";
 import mappin from "../assets/mappin.svg";
 import {Image} from "astro:assets";
@@ -10,7 +9,7 @@ import {Image} from "astro:assets";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Sevalia Bank</title>
 	</head>
@@ -40,7 +39,7 @@ import {Image} from "astro:assets";
 	</header>
 		<slot />
 	<footer class="bg-rose-700 text-white py-24 px-6">
-		<div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-16">
+		<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16">
 
 			<!-- Regulatory Block -->
 			<div>
@@ -57,17 +56,28 @@ import {Image} from "astro:assets";
 			<div>
 				<h3 class="text-2xl font-semibold mb-6">Contact Us</h3>
 				<p class="text-sm font-medium">📍 Sevalia, Gujarat – 388245</p>
-				<p class="text-sm font-medium">📞 +91 98765 43210</p>
-				<p class="text-sm font-medium">✉️ contact@sevaliabank.in</p>
+				<p class="text-sm font-medium">📞 (02699) 233287/ 233720/ 235356</p>
+				<p class="text-sm font-medium">✉️ sub_sevalia@yahoo.co.in</p>
+				<p class="text-sm font-medium">✉️ urban@sucb.in          </p>
 				<p class="text-sm font-medium mt-4">⏰ Mon – Sat: 10:00 AM – 4:00 PM<br>Sun: Closed</p>
 			</div>
 
-			<!-- Quick Info Block -->
+			<!-- Customer Support Block -->
 			<div>
 				<h3 class="text-2xl font-semibold mb-6">Customer Support</h3>
 				<p class="text-sm font-medium">For queries, complaints, or assistance, visit your nearest branch or call our helpline.</p>
 				<p class="text-sm font-medium mt-3">🛡️ We are committed to ethical, transparent, and inclusive banking.</p>
 				<p class="text-sm font-medium mt-3">👥 Follow us on WhatsApp for daily updates on rates and schemes (coming soon).</p>
+			</div>
+
+			<!-- Important Links Block -->
+			<div>
+				<h3 class="text-2xl font-semibold mb-6">Important Links</h3>
+				<ul class="space-y-3 text-sm font-medium">
+					<li><a href="/docs/annualReport.pdf" target="_blank" class="hover:underline hover:text-amber-300">📘 Annual Report 2025</a></li>
+					<li><a href="/docs/aheval.pdf" target="_blank" class="hover:underline hover:text-amber-300">📄 Audit Summary</a></li>
+					<li><a href="/docs/services.jpg" target="_blank" class="hover:underline hover:text-amber-300">📑 Services Brochure</a></li>
+				</ul>
 			</div>
 
 		</div>
